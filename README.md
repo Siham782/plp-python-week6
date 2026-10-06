@@ -1,11 +1,9 @@
 # PLP Python Week 6 - Safe Tools
 
-## Files
+This assignment practices handling errors using `try` and `except` in Python.
 
-* `safe_tools.py` - Contains three functions that safely handle division, number conversion, and dictionary lookups.
-* `unbreakable.py` - Contains the additional exception-handling exercise for Week 6.
-* `README.md` - Explains the assignment and the purpose of each file.
+* `safe_tools.py` - Contains three safe functions for division, number conversion, and dictionary field lookup.
+* `unbreakable.py` - Demonstrates handling errors so the program can continue running.
+* `README.md` - Describes the assignment and explains the use of error handling.
 
-## Why can't the `if` check catch `abc` on its own?
-
-An `if` check cannot catch `"abc"` when it is being converted with `int()` because the error happens during the conversion itself. The `try` and `except ValueError` block catches the error and allows the program to continue running instead of crashing.
+An `if` check cannot catch `abc` on its own because `abc` causes a `ValueError` when Python tries to convert it with `int()`. The conversion must be attempted first, and `try`/`except` can then handle the error safely.
